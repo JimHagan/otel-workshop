@@ -19,8 +19,8 @@ This repository contains all of the instructions and files needed to have a firs
 2. Navigate into your new workspace using `cd otel-workshop`
 3. Move onto part 1 of this workshop
 
-* Part 1: Setting up your environment
-* Part 2: Debugging a slow trace
+* Part 1: [Setting up your environment](https://github.com/Bijesse/otel-workshop/blob/main/Part_1-Setting_up_environment.md)
+* Part 2: [Debugging a slow trace](https://github.com/Bijesse/otel-workshop/blob/main/Part_2-Debugging-a-slow-trace)
 * Part 3:  
 
 
@@ -36,6 +36,8 @@ kubectl get nodes
 
 
 -----
+!OLD STUFF Work in progress, don't look at me
+
 ## Adding a delay
 
 Your first mission is to add an artificial delay in one of the functions to see the full power of OpenTelemetry and distributed tracing. Let’s say we want to know what exactly causes a delay in the frontend? Distributed tracing makes it easy for you to follow the journey of a request as it travels throughout your system.  

@@ -1,6 +1,6 @@
 # Part 1: Setting up your environment
 
-Now that you have a local version of this repository running on your device after completing the [Getting Started](*) requirements, it is time to set up your environment to run this application.
+Now that you have a local version of this repository running on your device after completing the [Getting Started](https://github.com/Bijesse/otel-workshop) requirements, it is time to set up your environment to run this application.
 
 ## Configure Minikube
 Run the following command to spin up your local environment 
@@ -51,4 +51,4 @@ You can navigate to [localhost:3000](*) to see a live version of your applicatio
 
 
 ## That's it
-Well done! You've set up a local version of Hipster Shop instrumented with OpenTelemetry. It's now time to move on to Part 2 of the workshop: [Debugging a slow trace](*)
+Well done! You've set up a local version of Hipster Shop instrumented with OpenTelemetry. It's now time to move on to Part 2 of the workshop: [Debugging a slow trace](https://github.com/Bijesse/otel-workshop/blob/main/Part_2-Debugging-a-slow-trace)
