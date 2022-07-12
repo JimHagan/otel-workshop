@@ -1,55 +1,41 @@
-# OpenTelemetry on the Cloud
+# OpenTelemetry in the Cloud
 
-The goal of this workshop is to see first hand the power of OpenTelemetry for cloud native applications
+This repository contains all of the instructions and files needed to have a first introduction to instrumenting an applicaiton with OpenTelemetry. In this lab you will identify and resolve various bugs using New Relic as your observability platform.
 
-## Prerequisites
+## Requirements
 
-[**Install Minikube**](https://minikube.sigs.k8s.io/docs/start/) 
+* Laptop with Mac OS X. Windows is not supported for this workshop
+* [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running
+* A free account with [New Relic](https://newrelic.com)
+* [Minikube](https://minikube.sigs.k8s.io/docs/start/) 
+* [Kubectl](https://kubernetes.io/docs/tasks/tools/)
+* [Skaffold](https://skaffold.dev/)
+* [Visual Studio Code](https://code.visualstudio.com/) or another code editor
 
-[**Install kubectl**](https://kubernetes.io/docs/tasks/tools/)
 
-[**Install Skaffold**](https://skaffold.dev/)
+## Getting Started
 
-**From a terminal with administrator access (but not as root), run** 
+1. From a new terminal window, clone this repository to your local machine using Git `git clone https://github.com/Bijesse/otel-workshop.git`
+2. Navigate into your new workspace using `cd otel-workshop`
+3. Move onto part 1 of this workshop
 
+* Part 1: Setting up your environment
+* Part 2: Debugging a slow trace
+* Part 3:  
+
+
+3. Run the following command to spin up your local environment 
 ```bash
 minikube start --memory 8192 --cpus 6
-```
-
-*This application is resource heavy so get ready for some 💨*
-
-**Check that your cluster is up and running by running**
-
+```  
+Please note, this application is very resource heavy. You may need to adjust your [Docker Resource settings](https://docs.docker.com/desktop/mac/)
+4. Check that your cluster is up and running using the following command
 ```bash
 kubectl get nodes
 ```
 
-**Clone the repo for the sample application** 
 
-```bash
-git clone https://github.com/newrelic-experimental/otel-workshop.git
-```
-
-**Export env variables** 
-
-```bash
-export OTEL_EXPORTER_OTLP_ENDPOINT=https://otlp.nr-data.net:4317
-export OTEL_EXPORTER_OTLP_METRICS_ENDPOINT=https://otlp.nr-data.net:4317
-export OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=https://otlp.nr-data.net:4317
-export OTEL_EXPORTER_OTLP_HEADERS=api-key=<NEWRELIC_INGEST_LICENSE_KEY>
-export NEW_RELIC_API_KEY=<NEWRELIC_INGEST_LICENSE_KEY>
-export NEW_RELIC_LICENSE_KEY=<NEWRELIC_INGEST_LICENSE_KEY>
-export NEW_RELIC_HOST=collector.newrelic.com
-```
-
-**Run Skaffold**
-
-*Note that this step will take ~15-20 minutes the first time you run this command because Docker has to build and push each of the microservices*
-
-```bash
-skaffold dev
-```
-
+-----
 ## Adding a delay
 
 Your first mission is to add an artificial delay in one of the functions to see the full power of OpenTelemetry and distributed tracing. Let’s say we want to know what exactly causes a delay in the frontend? Distributed tracing makes it easy for you to follow the journey of a request as it travels throughout your system.  

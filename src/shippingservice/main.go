@@ -199,11 +199,13 @@ func (q Quote) String() string {
 
 // CreateQuoteFromCount takes a number of items and returns a Price struct.
 func CreateQuoteFromCount(count int) Quote {
+	time.Sleep(time.Second * 1)
 	return CreateQuoteFromFloat(float64(rand.Intn(100)))
 }
 
 // CreateQuoteFromFloat takes a price represented as a float and creates a Price struct.
 func CreateQuoteFromFloat(value float64) Quote {
+	time.Sleep(time.Second * 3)
 	units, fraction := math.Modf(value)
 	return Quote{
 		uint32(units),
