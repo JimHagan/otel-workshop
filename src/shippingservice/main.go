@@ -167,7 +167,7 @@ func (s *server) GetQuote(ctx context.Context, in *pb.GetQuoteRequest) (*pb.GetQ
 	defer log.Info("[GetQuote] completed request")
 
 	// 1. Generate a quote based on the total number of items to be shipped.
-	quote := CreateQuoteFromCount(0)
+	quote := CreateQuoteFromCount(0, ctx)
 	// 2. Generate a response.
 	return &pb.GetQuoteResponse{
 		CostUsd: &pb.Money{
@@ -198,14 +198,18 @@ func (q Quote) String() string {
 }
 
 // CreateQuoteFromCount takes a number of items and returns a Price struct.
-func CreateQuoteFromCount(count int) Quote {
-	time.Sleep(time.Second * 1)
+func CreateQuoteFromCount(value float64 , ctx context.Context) Quote {
+	ctx, childSpan := tracer.Start(ctx, "CreateQuoteFromCount")
+	defer childSpan.End()
+	time.Sleep(time.Second * 5)
 	return CreateQuoteFromFloat(float64(rand.Intn(100)))
 }
 
 // CreateQuoteFromFloat takes a price represented as a float and creates a Price struct.
-func CreateQuoteFromFloat(value float64) Quote {
-	time.Sleep(time.Second * 3)
+func CreateQuoteFromFloat(value float64 , ctx context.Context) Quote {
+	ctx, childSpan := tracer.Start(ctx, "CreateQuoteFromFloat")
+	defer childSpan.End()
+	time.Sleep(time.Second * 5)
 	units, fraction := math.Modf(value)
 	return Quote{
 		uint32(units),

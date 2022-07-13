@@ -12,7 +12,15 @@ You decide to visit the website yourself to see what is going on. to do this, fo
 2. Add at least one item to your shopping cart
 3. Complete the purchase process to make an order online
 
-## Following a trace
-Now that you have experienced the issue on the front end, it is time to dig into New Relic to identify the root cause. Since Hipster Shop is built with multiple microservices you should be able to identify where the problem begins by observing a trace. 
+## Find the problem microservice
+Now that you have experienced the issue on the front end, it is time to dig into New Relic to identify the root cause. Hipster Shop is built on a variety of microservices while should help organize your search. But several microservices are interacting with the front end at the same time. To begin your Observability sluething, identify the microservice that seems significantly slower than the others.
 
-**Your Task** Follow distributed trace to locate the microservice causing a slowdown on Hipster Shop. Then use this infromation to identify the exact line of code causing the issue. Resolve it and try to make an order again
+## Following a trace
+Once you have identified the slower microservice, make use of distributed tracing in New Relic to find the specific function causing the slow page load times.
+
+## Dive into the code
+At this point in your sleuthing, you should have a hint or two regarding where you might find the issue. Try and locate the issue in the code of this application and remove it. 
+
+
+## Moving forward in the workshop
+Once you have identified the issue, be sure to document the process you completed using the companion guide. When that is done, you are ready to move onto the next excercise in this workshop [Part 3: Building Spans](*)
