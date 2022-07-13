@@ -21,7 +21,11 @@ This repository contains all of the instructions and files needed to have a firs
 
 * Part 1: [Setting up your environment](https://github.com/Bijesse/otel-workshop/blob/main/Part_1-Setting_up_environment.md)
 * Part 2: [Debugging a slow trace](https://github.com/Bijesse/otel-workshop/blob/main/Part_2-Debugging-a-slow-trace)
-* Part 3:  
+* Part 3: [Setting up an alert for a known issue](*)
+
+-----
+**!OLD STUFF Work in progress. don't look at me!!!!!!**
+
 
 
 3. Run the following command to spin up your local environment 
@@ -35,8 +39,7 @@ kubectl get nodes
 ```
 
 
------
-!OLD STUFF Work in progress, don't look at me
+
 
 ## Adding a delay
 
