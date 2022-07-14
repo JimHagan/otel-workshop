@@ -202,7 +202,7 @@ func CreateQuoteFromCount(value float64 , ctx context.Context) Quote {
 	ctx, childSpan := tracer.Start(ctx, "CreateQuoteFromCount")
 	defer childSpan.End()
 	time.Sleep(time.Second * 5)
-	return CreateQuoteFromFloat(float64(rand.Intn(100)))
+	return CreateQuoteFromFloat(float64(rand.Intn(100)), ctx)
 }
 
 // CreateQuoteFromFloat takes a price represented as a float and creates a Price struct.

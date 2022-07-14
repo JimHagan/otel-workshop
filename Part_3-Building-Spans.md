@@ -38,8 +38,8 @@ func (s *server) GetQuote(ctx context.Context, in *pb.GetQuoteRequest) (*pb.GetQ
 ```
 func CreateQuoteFromCount(value float64 , ctx context.Context) Quote {
 	ctx, childSpan := tracer.Start(ctx, "CreateQuoteFromCount")
-	defer childSpan.End()
 	...
+	return CreateQuoteFromFloat(float64(rand.Intn(100)), ctx)
 }
 ```
 
