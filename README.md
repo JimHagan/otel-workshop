@@ -7,10 +7,10 @@ This repository contains all of the instructions and files needed to have a firs
 * Laptop with Mac OS X. Windows is not supported for this workshop
 * [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running
 * A free account with [New Relic](https://newrelic.com)
-* [Minikube](https://minikube.sigs.k8s.io/docs/start/) 
-* [Kubectl](https://kubernetes.io/docs/tasks/tools/)
-* [Skaffold](https://skaffold.dev/)
-* [Visual Studio Code](https://code.visualstudio.com/) or another code editor
+* [Homebrew](https://brew.sh/)
+* Minikube / Kubectl / Skaffold / Git: `brew install minikube kubectl skaffold git`
+
+> If you prefer to download these requirements manually (instead of using homebrew) you may choose to do so using the following links: [Minikube](https://minikube.sigs.k8s.io/docs/start/) [Kubectl](https://kubernetes.io/docs/tasks/tools/) [Skaffold](https://skaffold.dev/)
 
 
 ## Getting Started
@@ -20,8 +20,8 @@ This repository contains all of the instructions and files needed to have a firs
 3. Move onto part 1 of this workshop
 
 * Part 1: [Setting up your environment](https://github.com/Bijesse/otel-workshop/blob/main/Part_1-Setting_up_environment.md)
-* Part 2: [Debugging a slow trace](https://github.com/Bijesse/otel-workshop/blob/main/Part_2-Debugging-a-slow-trace)
-* Part 3: [Setting up an alert for a known issue](*)
+* Part 2: [Debugging a slow trace](https://github.com/Bijesse/otel-workshop/blob/main/Part_2-Debugging-a-slow-trace.md)
+* Part 3: [Building Spans](https://github.com/Bijesse/otel-workshop/blob/main/Part_3-Building-Spans.md)
 
 -----
 **!OLD STUFF Work in progress. don't look at me!!!!!!**
