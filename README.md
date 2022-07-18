@@ -1,6 +1,6 @@
 # OpenTelemetry in the Cloud
 
-This repository contains all of the instructions and files needed to have a first introduction to instrumenting an applicaiton with OpenTelemetry. In this lab you will identify and resolve various bugs using New Relic as your observability platform.
+This repository contains all of the instructions and files needed to have a first introduction to instrumenting an application with OpenTelemetry. In this lab you will identify and resolve various bugs using New Relic as your observability platform.
 
 ## Requirements
 
@@ -10,7 +10,7 @@ This repository contains all of the instructions and files needed to have a firs
 * [Homebrew](https://brew.sh/)
 * Minikube / Kubectl / Skaffold / Git: `brew install minikube kubectl skaffold git`
 
-> If you prefer to download these requirements manually (instead of using homebrew) you may choose to do so using the following links: [Minikube](https://minikube.sigs.k8s.io/docs/start/) [Kubectl](https://kubernetes.io/docs/tasks/tools/) [Skaffold](https://skaffold.dev/)
+> If you prefer to download these requirements manually (instead of using homebrew) you may choose to do so using the following links: [Minikube](https://minikube.sigs.k8s.io/docs/start/) || [Kubectl](https://kubernetes.io/docs/tasks/tools/) || [Skaffold](https://skaffold.dev/) || [Git](https://github.com/git-guides/install-git)
 
 
 ## Getting Started

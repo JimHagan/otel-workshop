@@ -33,6 +33,7 @@ import (
 	sdktrace "go.opentelemetry.io/otel/sdk/trace"
 	semconv "go.opentelemetry.io/otel/semconv/v1.7.0"
 	"go.opentelemetry.io/otel/trace"
+//	"go.opentelemetry.io/otel/attribute"
 
 
 	"golang.org/x/net/context"
@@ -183,14 +184,24 @@ func (s *server) GetQuote(ctx context.Context, in *pb.GetQuoteRequest) (*pb.GetQ
 func (s *server) ShipOrder(ctx context.Context, in *pb.ShipOrderRequest) (*pb.ShipOrderResponse, error) {
 	log.Info("[ShipOrder] received request")
 	defer log.Info("[ShipOrder] completed request")
+	
 	// 1. Create a Tracking ID
 	baseAddress := fmt.Sprintf("%s, %s, %s, %d", in.Address.StreetAddress, in.Address.City, in.Address.State, in.Address.ZipCode)
 	id := CreateTrackingId(baseAddress)
+	
+	parentSpan.SetAttributes(
+		attribute.String("address", baseAddress), 
+		attribute.String("city", in.Address.City), 
+		attribute.String("state", in.Address.State))
+		
 	// 2. Generate a response.
 	return &pb.ShipOrderResponse{
 		TrackingId: id,
 	}, nil
+
+
 }
+
 
 // String representation of the Quote.
 func (q Quote) String() string {
