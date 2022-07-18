@@ -52,4 +52,4 @@ func CreateQuoteFromFloat(value float64 , ctx context.Context) Quote {
 ```
 
 ## Moving forward in the workshop
-Once you have identified the benefit(s) of including spans, be sure to document your process. When that is done, you are ready to move onto the next excercise in this workshop [Part 4: NAME](*)
+Once you have identified the benefit(s) of including spans, be sure to document your process. When that is done, you are ready to move onto the next excercise in this workshop [Part 4: Adding Span Attributes](Part_4-Span-Attributes.md) 

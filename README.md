@@ -22,6 +22,7 @@ This repository contains all of the instructions and files needed to have a firs
 * Part 1: [Setting up your environment](https://github.com/Bijesse/otel-workshop/blob/main/Part_1-Setting_up_environment.md)
 * Part 2: [Debugging a slow trace](https://github.com/Bijesse/otel-workshop/blob/main/Part_2-Debugging-a-slow-trace.md)
 * Part 3: [Building Spans](https://github.com/Bijesse/otel-workshop/blob/main/Part_3-Building-Spans.md)
+* Part 4: [Adding Span Attributes](Part_4-Span-Attributes.md) 
 
 -----
 **!OLD STUFF Work in progress. don't look at me!!!!!!**
