@@ -189,10 +189,10 @@ func (s *server) ShipOrder(ctx context.Context, in *pb.ShipOrderRequest) (*pb.Sh
 	baseAddress := fmt.Sprintf("%s, %s, %s, %d", in.Address.StreetAddress, in.Address.City, in.Address.State, in.Address.ZipCode)
 	id := CreateTrackingId(baseAddress)
 	
-	parentSpan.SetAttributes(
-		attribute.String("address", baseAddress), 
-		attribute.String("city", in.Address.City), 
-		attribute.String("state", in.Address.State))
+	// parentSpan.SetAttributes(
+	// 	attribute.String("address", baseAddress), 
+	// 	attribute.String("city", in.Address.City), 
+	// 	attribute.String("state", in.Address.State))
 		
 	// 2. Generate a response.
 	return &pb.ShipOrderResponse{

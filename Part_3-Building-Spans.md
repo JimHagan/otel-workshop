@@ -10,16 +10,11 @@ You show another developer on your team the New Relic permalink showing the dist
 Your developer sent you a few code snippets at 9pm last night since they have a planned PTO for the next couple of weeks. Their message is below.
 
 
-## Your task
-Read the message from the developer to update the code in the `shippingservice/main.go` file. After you have updated the environment, head back to New Relic to see how the data coming in from the distributed trace has changed. Document your findings.
-
-
-
 > Hey there,  
 > 
 > These updated code blocks will generate individual spans to fix your problem. Add them to each function along with the sleep commands you found earlier (to reproduce the issue you had previously) and you should see how I fixed the problem.
 > 
-> If you have any quesitons while I'm gone... good luck! You'll figure it out.
+> If you have any questions while I'm gone... good luck! You'll figure it out.
 > 
 > Cheers,  
 > Your Favorite Dev
@@ -50,6 +45,10 @@ func CreateQuoteFromFloat(value float64 , ctx context.Context) Quote {
 	...
 }
 ```
+## Your task
+Read the message from the developer so that you can update the code in the `shippingservice/main.go` file. After you have updated the environment, head back to New Relic to see how the data coming in from the distributed trace has changed. Document your findings.
+
+
 
 ## Moving forward in the workshop
 Once you have identified the benefit(s) of including spans, be sure to document your process. When that is done, you are ready to move onto the next excercise in this workshop [Part 4: Adding Span Attributes](Part_4-Span-Attributes.md) 

@@ -8,12 +8,12 @@ Starting around 10-10:30AM today, the Hipster Shop social media PR team has been
 
 You decide to visit the website yourself to see what is going on. To do this, follow these steps and make note of any issues that occur along the way.
 
-1. Go to [localhost:3000](*) 
+1. Go to [localhost:3000](*) **!Note from Tom - Update this when frontend is live!**
 2. Add at least one item to your shopping cart
 3. Complete the purchase process to make an order online
 
 ## Find the problem microservice
-Now that you have experienced the issue on the front end, it is time to dig into New Relic to identify the root cause. Hipster Shop is built on a variety of microservices which should help organize and conatain your search. But several microservices are interacting with the front end at the same time. To begin your observability sleuthing, identify the microservice that seems significantly slower than the others. **Fact check this paragraph**
+Now that you have experienced the issue on the front end, it is time to dig into New Relic to identify the root cause. Hipster Shop is built on a variety of microservices which should help organize and conatain your search. But several microservices are interacting with the front end at the same time. To begin your observability sleuthing, identify the microservice that seems significantly slower than the others. **!Note from Tom! Fact check this paragraph**
 
 ## Following a trace
 Once you have identified the slower microservice, make use of distributed tracing in New Relic to find the specific function causing the slow page load times.
