@@ -22,5 +22,8 @@ Once you have identified the slower microservice, make use of distributed tracin
 At this point in your sleuthing, you should have a hint or two regarding where you might find the issue. Try and locate the issue in the code of this application and remove it. 
 
 
+## Alerting on this issue
+At this point, you have resolved the issue but you have some concern that a developer might reproduce the issue during an upcoming sprint. To account for this, create an alert that will notify you if the service that was causing the slowness in this lab becomes slow again. **!Note from Tom! how can we check if the shipping service takes more than 1 second. What query to use?... maybe this `SELECT count(*) FROM Span WHERE entity.name = 'shippingservice' AND duration.ms > 1 `**
+
 ## Moving forward in the workshop
-Once you have identified the issue, be sure to document the process you took to locate and resolve this issue. When that is done, you are ready to move onto the next excercise in this workshop [Part 3: Building Spans](https://github.com/Bijesse/otel-workshop/blob/main/Part_3-Building-Spans.md)
+Once you have identified the issue and alerted on it, be sure to document the process you took to locate and resolve this issue. When that is done, you are ready to move onto the next excercise in this workshop [Part 3: Building Spans](https://github.com/Bijesse/otel-workshop/blob/main/Part_3-Building-Spans.md)

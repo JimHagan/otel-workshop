@@ -33,7 +33,8 @@ import (
 	sdktrace "go.opentelemetry.io/otel/sdk/trace"
 	semconv "go.opentelemetry.io/otel/semconv/v1.7.0"
 	"go.opentelemetry.io/otel/trace"
-//	"go.opentelemetry.io/otel/attribute"
+//FOK
+	"go.opentelemetry.io/otel/attribute"
 
 
 	"golang.org/x/net/context"
@@ -182,6 +183,11 @@ func (s *server) GetQuote(ctx context.Context, in *pb.GetQuoteRequest) (*pb.GetQ
 // ShipOrder mocks that the requested items will be shipped.
 // It supplies a tracking ID for notional lookup of shipment delivery status.
 func (s *server) ShipOrder(ctx context.Context, in *pb.ShipOrderRequest) (*pb.ShipOrderResponse, error) {
+	
+	// FOK
+	ctx, parentSpan := tracer.Start(ctx, "shipOrder")
+	defer parentSpan.End()
+
 	log.Info("[ShipOrder] received request")
 	defer log.Info("[ShipOrder] completed request")
 	
@@ -189,10 +195,12 @@ func (s *server) ShipOrder(ctx context.Context, in *pb.ShipOrderRequest) (*pb.Sh
 	baseAddress := fmt.Sprintf("%s, %s, %s, %d", in.Address.StreetAddress, in.Address.City, in.Address.State, in.Address.ZipCode)
 	id := CreateTrackingId(baseAddress)
 	
-	// parentSpan.SetAttributes(
-	// 	attribute.String("address", baseAddress), 
-	// 	attribute.String("city", in.Address.City), 
-	// 	attribute.String("state", in.Address.State))
+	//FOK
+	parentSpan.SetAttributes(
+		attribute.String("address", baseAddress), 
+		attribute.String("city", in.Address.City), 
+		attribute.String("state", in.Address.State))
+		
 		
 	// 2. Generate a response.
 	return &pb.ShipOrderResponse{
@@ -208,7 +216,7 @@ func (q Quote) String() string {
 	return fmt.Sprintf("$%d.%d", q.Dollars, q.Cents)
 }
 
-// CreateQuoteFromCount takes a number of items and returns a Price struct.
+// CreateQuoteFromCount takes a number of items and returns a Price struct. FOK
 func CreateQuoteFromCount(value float64 , ctx context.Context) Quote {
 	ctx, childSpan := tracer.Start(ctx, "CreateQuoteFromCount")
 	defer childSpan.End()
@@ -216,7 +224,7 @@ func CreateQuoteFromCount(value float64 , ctx context.Context) Quote {
 	return CreateQuoteFromFloat(float64(rand.Intn(100)), ctx)
 }
 
-// CreateQuoteFromFloat takes a price represented as a float and creates a Price struct.
+// CreateQuoteFromFloat takes a price represented as a float and creates a Price struct. FOK
 func CreateQuoteFromFloat(value float64 , ctx context.Context) Quote {
 	ctx, childSpan := tracer.Start(ctx, "CreateQuoteFromFloat")
 	defer childSpan.End()

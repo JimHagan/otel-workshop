@@ -3,7 +3,7 @@
 In this exercise you are going to build individual spans so that the information provided to you in New Relic can better pinpoint the problem
 
 ## Speaking with your developer
-In the previous excercise, you were able to leverage New Relic to locate the problem. However, it took you much longer than you would have hoped to find a sleep command that one of your colleagues probably forgot to remove during the development stage. :facepalm: 
+In the previous excercise, you were able to leverage New Relic to locate the problem. However, it took you much longer than you would have hoped to find a command that one of your colleagues probably forgot to remove while debugging an issue. :facepalm: 
 
 You show another developer on your team the New Relic permalink showing the distributed trace from Part 2 of this lab and tell them that you want to get closer to being able to identify the exact line of code that is causing an issue or delay.
 
