@@ -3,9 +3,9 @@
 In this lab you are going to build individual spans so that the information provided to you in New Relic can better pinpoint the problem
 
 ## Speaking with your developer
-In the previous excercise, you were able to leverage New Relic to locate the problem. However, it took you much longer than you would have hoped to find a command that one of your colleagues probably forgot to remove while debugging an issue. :facepalm: 
+In the previous excercise, you were able to leverage New Relic to locate the problem. However, it took you much longer than you would have hoped to find a command that one of your colleagues probably forgot to remove while debugging an issue that was clearly not meant for production. :facepalm: 
 
-You show another developer on your team the New Relic permalink showing the distributed trace from Part 2 of this lab and tell them that you want to get closer to being able to identify the exact line of code that is causing an issue or delay.
+You show a developer on your team the New Relic permalink showing the distributed trace from Part 2 of this lab. You task them that to create a solution that would allow you to get closer to being able to identify the exact line of code that is causing an issue or delay in this microservice. 
 
 Your developer sent you a few code snippets at 9pm last night since they have a planned PTO for the next couple of weeks. Their message is below.
 
