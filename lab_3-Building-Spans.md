@@ -1,6 +1,6 @@
-# Part 3: Building Spans
+# Lab 3: Building spans
 
-In this exercise you are going to build individual spans so that the information provided to you in New Relic can better pinpoint the problem
+In this lab you are going to build individual spans so that the information provided to you in New Relic can better pinpoint the problem
 
 ## Speaking with your developer
 In the previous excercise, you were able to leverage New Relic to locate the problem. However, it took you much longer than you would have hoped to find a command that one of your colleagues probably forgot to remove while debugging an issue. :facepalm: 
@@ -51,4 +51,4 @@ Read the message from the developer so that you can update the code in the `ship
 
 
 ## Moving forward in the workshop
-Once you have identified the benefit(s) of including spans, be sure to document your process. When that is done, you are ready to move onto the next excercise in this workshop [Part 4: Adding Span Attributes](Part_4-Span-Attributes.md) 
+Once you have identified the benefit(s) of including spans, be sure to document your process. When that is done, you are ready to move onto the next lab in this workshop [Lab 4: Adding Span Attributes](lab_4-Span-Attributes.md) 

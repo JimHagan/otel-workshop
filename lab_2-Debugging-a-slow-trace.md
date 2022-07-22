@@ -1,6 +1,6 @@
-# Part 2: Debugging a slow trace
+# Lab 2: Debugging a slow trace
 
-In this exercise you will step into the shoes of a DevOps engineer at Hipster Shop. You will take a look at a consistently slow experience that all customers are having. You will then use New Relic to identify and resolve this issue.
+For the remainder of this workshop you will step into the shoes of a DevOps engineer at the popular online store Hipster Shop. In your role, you are often tasked to resolve problems and create proactive solutions that require proper monitoring and observability. You will use New Relic to identify and resolve these tasks.
 
 ## Locating the frontend issue
 
@@ -26,4 +26,4 @@ At this point in your sleuthing, you should have a hint or two regarding where y
 At this point, you have resolved the issue but you have some concern that a developer might reproduce the issue during an upcoming sprint. To account for this, create an alert that will notify you if the service that was causing the slowness in this lab becomes slow again. **!Note from Tom! how can we check if the shipping service takes more than 1 second. What query to use?... maybe this `SELECT count(*) FROM Span WHERE entity.name = 'shippingservice' AND duration.ms > 1 `**
 
 ## Moving forward in the workshop
-Once you have identified the issue and alerted on it, be sure to document the process you took to locate and resolve this issue. When that is done, you are ready to move onto the next excercise in this workshop [Part 3: Building Spans](https://github.com/Bijesse/otel-workshop/blob/main/Part_3-Building-Spans.md)
+Once you have identified the issue and alerted on it, be sure to document the process you took to locate and resolve this issue. When that is done, you are ready to move onto the next lab in this workshop [Lab 3: Building Spans](lab_3-Building-Spans.md)

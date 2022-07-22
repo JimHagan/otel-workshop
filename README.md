@@ -17,12 +17,12 @@ This repository contains all of the instructions and files needed to have a firs
 
 1. From a new terminal window, clone this repository to your local machine using Git `git clone https://github.com/Bijesse/otel-workshop.git`
 2. Navigate into your new workspace using `cd otel-workshop`
-3. Move onto part 1 of this workshop
+3. Move onto the first lab of this workshop
 
-* Part 1: [Setting up your environment](https://github.com/Bijesse/otel-workshop/blob/main/Part_1-Setting_up_environment.md)
-* Part 2: [Debugging a slow trace](https://github.com/Bijesse/otel-workshop/blob/main/Part_2-Debugging-a-slow-trace.md)
-* Part 3: [Building Spans](https://github.com/Bijesse/otel-workshop/blob/main/Part_3-Building-Spans.md)
-* Part 4: [Adding Span Attributes](Part_4-Span-Attributes.md) 
+* Lab 1: [Setting up your environment](lab_1-Setting_up_environment.md)
+* Lab 2: [Debugging a slow trace](lab_2-Debugging-a-slow-trace.md)
+* Lab 3: [Building spans](lab_3-Building-Spans.md)
+* Lab 4: [Adding span attributes](lab_4-Span-Attributes.md) 
 
 -----
 **!OLD STUFF Work in progress. don't look at me!!!!!!**

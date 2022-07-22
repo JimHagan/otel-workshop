@@ -1,4 +1,4 @@
-# Part 1: Setting up your environment
+# Lab 1: Setting up your environment
 
 Now that you have a local version of this repository saved on your device after completing the [Getting Started](https://github.com/Bijesse/otel-workshop) requirements, it is time to set up your environment to run this application.
 
@@ -21,7 +21,7 @@ If successful, you should see a node called `minikube` in a table with some othe
 ## Instrument with OpenTelemetry
 1. Navigate to [New Relic](https://one.newrelic.com), and sign in with your account.
 2. Locate your ingest license key
-3. Run the following commands to export env variables and instrument your applicaiton with OpenTelemetry. Be sure to update each command to include your New Relic ingest license key. It is also recommended that you keep these commands in a notes file for safe keeping.
+3. Run the following commands to export env variables and instrument your application with OpenTelemetry. Be sure to update each command to include your New Relic ingest license key. It is also recommended that you keep these commands in a notes file for safe keeping.
 
 ```bash
 export OTEL_EXPORTER_OTLP_ENDPOINT=https://otlp.nr-data.net:4317
@@ -53,4 +53,4 @@ If any unexpected errors occur during deployment, attempt to run this command on
 
 
 ## That's it
-Well done! You've set up a local version of Hipster Shop instrumented with OpenTelemetry. It's now time to move on to Part 2 of the workshop: [Debugging a slow trace](https://github.com/Bijesse/otel-workshop/blob/main/Part_2-Debugging-a-slow-trace.md)
+Well done! You've set up a local version of Hipster Shop instrumented with OpenTelemetry. It's now time to move on to lab 2 of the workshop: [Debugging a slow trace](lab_2-Debugging-a-slow-trace.md)
