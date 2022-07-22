@@ -25,4 +25,4 @@ At this point, instrumentation provider (OpenTelemetry) is lacking the attribute
 **!Note From Tom! ^^ I'm trying to find a way for someone to figure out how to do this on their own but it seems to difficult still. Perhaps there is a URL we can provide to help in this process?**
 
 ## Moving forward in the workshop
-Once you have confirmed your ability to track city and state on shipped orders be sure to document your process. When that is done, you are ready to move onto the next lab in this workshop [Part 5: NAME]()
+Once you have confirmed your ability to track city and state on shipped orders be sure to document your process. When that is done, you are ready to move onto the next lab in this workshop [Lab 5: Passing the torch](lab_5-passing-the-torch.md)

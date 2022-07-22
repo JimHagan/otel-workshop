@@ -17,3 +17,5 @@ With your remaining two weeks dedicated to passing the proverbial observability 
   * Things to consider: Relevant New Relic docs, Introductions to New Relic staff, possible automation you can introduce to limit manual configuration, etc.  
 3. Create a presentation for a 1-hour meeting scheduled for you to lead on your final day. This presentation will include executives and engineers. They are expecting to see a slideshow that includes everything they need to know moving forward as it relates how and why they should leverage New Relic after you leave.   
  
+## Completing this workshop
+After you have created your presentation, be sure to share the slidedeck with your facilitator(s). you will be expected to share your plan of action with others later in this training.  
