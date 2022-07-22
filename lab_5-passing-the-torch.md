@@ -11,8 +11,8 @@ At the moment, all of the custom dashboards, attributes, queries, alerts, synthe
 ### Your plan 
 With your remaining two weeks dedicated to passing the proverbial observability torch you have decided you need to do the following:
 
-1. Create as many resources you feel would be necessary in the Hipster Shop New Relic account to demonstrate the value gained using the platform. *This could come in the form of custom dashboards, alerts, etc. The goal here is to prove that New Relic saves Hipster Shop time and money. *
-2. Identify the resources provided by New Relic that others need to be aware of in order to be successful moving forward. *Things to consider: Relevant New Relic docs, Introductions to New Relic staff, possible automation you can introduce to limit manual configuration, etc.  *
+1. Create as many resources you feel would be necessary in the Hipster Shop New Relic account to demonstrate the value gained using the platform.  *This could come in the form of custom dashboards, alerts, etc. The goal here is to prove that New Relic saves Hipster Shop time and money.*
+2. Identify the resources provided by New Relic that others need to be aware of in order to be successful moving forward.  *Things to consider: Relevant New Relic docs, Introductions to New Relic staff, possible automation you can introduce to limit manual configuration, etc.*
 3. Create a presentation for a 1-hour meeting scheduled for you to lead on your final day. *This presentation will include executives and engineers. They are expecting to see a slideshow that includes everything they need to know moving forward as it relates how and why they should leverage New Relic after you leave.*
  
 ## Completing this workshop
