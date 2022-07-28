@@ -21,7 +21,7 @@ Realizing that you can't locate or query by the attribute "state" or "city" you 
 
 At this point, your instrumentation provider (OpenTelemetry) is lacking the attribute(s) needed to collect the data you want. You will need to discover a way to import and add those attribute(s) to a span. You find this reference to [manual instrumentation](https://opentelemetry.io/docs/instrumentation/go/manual/) in the OpenTelemetry docs and begin your attempts to solve the issue here. 
 
-> If you have pushed your technical skills to the limit, are running short on time in this lab, or would like to confirm your code for accuracy then refer to this [solution file](/release/shippingservice-AFTER.go) for the answer to this problem in addition to a code snippet that will produce an error when a user doesn't provide a 5-digit zipcode
+> If you have pushed your technical skills to the limit, are running short on time in this lab, or would like to confirm your code for accuracy then refer to this [solution file](/reference/shippingservice-AFTER.go) for the answer to this problem in addition to a code snippet that will produce an error when a user doesn't provide a 5-digit zipcode
 
 ## Moving forward in the workshop
 Once you have confirmed your ability to track city and state on shipped orders be sure to document your process. When that is done, you are ready to move onto the next lab in this workshop [Lab 5: Passing the torch](lab_5-passing-the-torch.md)
