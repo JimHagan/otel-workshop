@@ -34,7 +34,7 @@ export NEW_RELIC_HOST=collector.newrelic.com
 ```
 
 ## Run Skaffold
-*Note that this step will take ~15-20 minutes the first time you run this command because Docker has to build and push each of the microservices*
+*Note: this step can take up to 15 minutes the first time you run this command because Docker has to build and push each of the microservices*
 
 ```bash
 skaffold dev
@@ -49,7 +49,7 @@ If any unexpected errors occur during deployment, attempt to run this command on
 ## View your data in New Relic
 1. Navigate to [New Relic](https://one.newrelic.com)
 2. Locate `Services - OpenTelemetry` under all entities
-3. You should see 9 services related to this applcation running and recieving throughput
+3. You should see 9 services related to this applcation running and recieving throughput. You will also see a 10th service `emailservice` if you navigate to APM in New Relic.
 
 
 ## That's it
