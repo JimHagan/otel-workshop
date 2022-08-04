@@ -1,6 +1,6 @@
 # Lab 1: Setting up your environment
 
-Now that you have a local version of this repository saved on your machine after completing the [Getting Started](https://github.com/Bijesse/otel-workshop) requirements, it is time to set up your environment to run this application, called Hipster Shop. It consists of 9 microservices that have been instrumented with OpenTelemetry, and 1 microservice that has been instrumented with an APM agent. 
+Now that you have a local version of this repository saved on your device after completing the [Getting Started](https://github.com/Bijesse/otel-workshop) requirements, it is time to set up your environment to run the Hipster Shop application. This app consists of 9 microservices that have been instrumented with OpenTelemetry, and 1 microservice that has been instrumented with an APM agent.
 
 ## Quick background information on the technologies used in this lab:
 * **OpenTelemetry** is an open standard for generating and exporting telemetry from your services to help you analyze your software's performance and behavior. It is a vendor-agnostic observability framework. 
@@ -24,9 +24,9 @@ kubectl get nodes
 If the deployment was successful, you should see a node called `minikube` in a table, along with some basic information about the cluster.
 
 ## Export environment variables 
-1. Sign into your [New Relic](https://one.newrelic.com) account.
-2. Locate your **ingest license** key from your account's [API keys list](https://one.newrelic.com/api-keys), and copy the key. Replace all instances of `<NEWRELIC_INGEST_LICENSE_KEY>` below with this value.
-3. Run the following commands to export the environment variables below, which configure the generated OpenTelemetry data to be sent to your account. Save these commands in a notes file for later reference.
+1. Sign into your [New Relic](https://one.newrelic.com) account
+2. Locate your **ingest license** key from your account's [API keys list](https://one.newrelic.com/api-keys), and copy the key. Replace all instances of `<NEWRELIC_INGEST_LICENSE_KEY>` below with this value
+3. Run the following commands to export the environment variables below, which configure the generated OpenTelemetry data to be sent to your account. Save these commands in a notes file for later reference
 
 ```bash
 export OTEL_EXPORTER_OTLP_ENDPOINT=https://otlp.nr-data.net:4317
