@@ -215,27 +215,28 @@ func (q Quote) String() string {
 }
 
 // CreateQuoteFromCount takes a number of items and returns a Price struct.
-// FOK Workshop - Building spans
+// NHTT Workshop - Building spans
 func CreateQuoteFromCount(count int) Quote {
 
-	// FOK Workshop - Building Spans
+	// NHTT Workshop - Building Spans
+	
 
-
-	// FOK Workshop - Adding a Delay
-
-	// FOK Workshop - Building Spans
+	// NHTT Workshop - Delays are hip!
+	time.Sleep(time.Second * 1)
+	
+	// NHTT Workshop - Building Spans
 	return CreateQuoteFromFloat(float64(rand.Intn(100)))
 }
 
 // CreateQuoteFromFloat takes a price represented as a float and creates a Price struct.
-// FOK Workshop - Building Spans
+// NHTT Workshop - Building Spans
 func CreateQuoteFromFloat(value float64) Quote {
 	
-	// FOK Workshop - Building Spans
+	// NHTT Workshop - Building Spans
 
 
-	// FOK Workshop - Adding a Delay
-
+	// NHTT Workshop - Delays are hip!
+	time.Sleep(time.Second * 3)
 
 	units, fraction := math.Modf(value)
 	return Quote{
