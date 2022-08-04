@@ -39,7 +39,8 @@ export NEW_RELIC_HOST=collector.newrelic.com
 ```
 
 ## Run Skaffold
-*Note that this step will take ~15-20 minutes the first time you run this command, because Docker has to build and push each of the microservices*
+
+*Note: this step can take up to 15 minutes the first time you run this command because Docker has to build and push each of the microservices*
 
 ```bash
 skaffold dev
@@ -55,6 +56,7 @@ If any errors occur during deployment, run `skaffold dev` one more time before r
 1. Navigate to your [New Relic account](https://one.newrelic.com).
 2. Locate `Services - OpenTelemetry` under `All entities`.
 3. You should see 9 microservices running and receiving data. You should also see a 10th service under `Services - APM`. 
+
 
 ## That's it
 Well done! You've set up a local version of Hipster Shop that has been instrumented with both OpenTelemetry and an APM agent. It's now time to move on to lab 2 of the workshop: [Debugging a slow trace](lab_2-Debugging-a-slow-trace.md).
