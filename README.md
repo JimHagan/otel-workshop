@@ -23,4 +23,4 @@ This repository contains all of the instructions and files needed to have a firs
 * Lab 2: [Debugging a slow trace](lab_2-Debugging-a-slow-trace.md)
 * Lab 3: [Building spans](lab_3-Building-Spans.md)
 * Lab 4: [Adding span attributes](lab_4-Span-Attributes.md) 
-* Lab 5: [Passsing the torch](lab_5-passing-the-torch.md) 
+* Lab 5: [Passing the torch](lab_5-passing-the-torch.md) 
