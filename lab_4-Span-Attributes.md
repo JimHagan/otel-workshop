@@ -25,4 +25,6 @@ At this point, your instrumentation provider (OpenTelemetry) is lacking the attr
 > If you have pushed your technical skills to the limit, are running short on time in this lab, or would like to confirm your code for accuracy then refer to this [solution file](/reference/shippingservice-AFTER.go) for the answer to this problem in addition to a code snippet that will produce an error when a user doesn't provide a 5-digit zipcode
 
 ## Moving forward in the workshop
-Once you have confirmed your ability to track city and state on shipped orders be sure to document your process. When that is done, you are ready to move onto the next lab in this workshop [Lab 5: Passing the torch](lab_5-passing-the-torch.md)
+Once you have confirmed your ability to track city on shipped orders be sure to document your process. You are ready to move on in this workshop.  
+* If you have completed each of the 4 labs with time still remaining in the workshop, please take a look at the [Additional Challenges](Additional-Chellanges.md) available.  
+* If you have completed each of the 4 labs on pace with expectatations, please move onto [Lab 5: Passing the torch](lab_5-passing-the-torch.md)
