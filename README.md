@@ -5,7 +5,7 @@ This repository contains all of the instructions and files needed to have a firs
 ## Requirements
 
 * Laptop with Mac OS X. Windows is not supported for this workshop
-* [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running
+* [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running. [New Relic employee Docker Desktop installation process](https://newrelic.atlassian.net/wiki/spaces/TB/blog/2022/01/28/2397307824/Docker+Hub+SSO+Is+Live)
 * A free account with [New Relic](https://newrelic.com)
 * [Homebrew](https://brew.sh/)
 * Minikube / Kubectl / Skaffold / Git: `brew install minikube kubectl skaffold git`
