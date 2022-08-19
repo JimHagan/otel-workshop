@@ -13,7 +13,7 @@ Run the following terminal command to spin up your local Kubernetes cluster:
 minikube start --memory 8192 --cpus 6
 ```  
 
-Please note, this application is very resource-heavy. You may need to adjust your [Docker Resource settings](https://docs.docker.com/desktop/mac/) to move forward.
+Please note, this application is very resource-heavy. You may need to adjust your [Docker Resource settings](https://docs.docker.com/desktop/settings/mac/) to move forward.
 
 ## Check Kubernetes
 Check that your cluster is up and running using the following command:
