@@ -26,5 +26,5 @@ At this point, your instrumentation provider (OpenTelemetry) is lacking the attr
 
 ## Moving forward in the workshop
 Once you have confirmed your ability to track city on shipped orders be sure to document your process. You are ready to move on in this workshop.  
-* If you have completed each of the 4 labs with time still remaining in the workshop, please take a look at the [Additional Challenges](Additional-Chellanges.md) available.  
+* If you have completed each of the 4 labs with time still remaining in the workshop, please take a look at the [Additional Challenges](Additional-Challenges.md) available.  
 * If you have completed each of the 4 labs on pace with expectatations, please move onto [Lab 5: Passing the torch](lab_5-passing-the-torch.md)
