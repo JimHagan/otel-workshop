@@ -21,7 +21,7 @@ Once you have identified the slowest microservice, make use of [distributed trac
 ## Dive into the code
 At this point in your sleuthing, you should have a hint or two regarding where you might find the issue. Try and locate the issue in the code of this application and remove it.
 
-**Hint: TOnce you have identified the problematic service, the issue is locating in the main.go of that service. This is the only file you will be required to edit while completing labs 2-4**
+**Hint: Once you have identified the problematic service, the issue is locating in the main.go of that service. This is the only file you will be required to edit while completing labs 2-4**
 
 ## Alerting on this issue
 At this point, you have resolved the issue but you have some concern that a developer might reproduce the issue during an upcoming sprint. To account for this, create an alert that will notify you if the service that was causing the slowness in this lab becomes slow again. **!Note from Tom! how can we check if the shipping service takes more than 1 second. What query to use?... maybe this `SELECT count(*) FROM Span WHERE entity.name = 'shippingservice' AND duration.ms > 1 `**
