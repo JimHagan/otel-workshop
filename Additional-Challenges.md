@@ -1,7 +1,7 @@
 # Additional Challenges
 This portion of the workshop is intended for someone who has completed labs 1-4 with time to spare before moving onto the final portion of this workshop, lab 5, which is a group activity that will be completed in small groups.
 
-##Challenge 1 - APM vs OTel
+## Challenge 1 - APM vs OTel
 Each of the 11 microservices in this application are listed below. One of these microservices has not been instrumented with OpenTelemetry, it has been instrumented with the New Relic APM agent. Use the New Relic Platform to identify which microservice is instrumented with APM. Once you have done that, compare this service with at least one other service in the app to compare and contrast differences in the way charts/dashboards appear by default, how custom queries must differ in order to receive simlar data across different agents, etc.    
 
 | Service                                              | Language      | Description                                                                                                                       |
@@ -19,7 +19,7 @@ Each of the 11 microservices in this application are listed below. One of these 
 | [loadgenerator](./src/loadgenerator)                 | Python/Locust | Continuously sends requests imitating realistic user shopping flows to the frontend.                                              |
 
 
-##Challenge 2 - Otel Collector
+## Challenge 2 - Otel Collector
 In this challenge, you will interact with the OTel collector to get some hands-on experience levaraging a powerful tool that is a primary factor for prospects/customers when consdiering OTel as a solution for their tech stack.
 
 **What is the OTel Collector?**
