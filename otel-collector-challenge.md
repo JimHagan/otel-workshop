@@ -74,7 +74,7 @@ To implement the `tail_sampling` processor, paste the following configuration un
    policies:
     [
         {
-            name: policy-2,
+            name: policy-1,
             type: always_sample
         },
         {
