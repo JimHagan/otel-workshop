@@ -127,5 +127,7 @@ Compare trends before these changes were made to the collector using a simple NR
 
 If you are not seeing these changes to take effect, exit ``skaffold dev`` (Press Control-C for Mac or Windows) to stop running the environment. Then run ``skaffold dev``. Wait 5-10 minutes and run the query again to see the changes in data ingest.  
 
+> If you have encountered any bugs during this challenge you can compare the updates you've made to the yaml file with this [solution code](reference/otel-collector-agent_collector-AFTER.yaml).
+
 ## Moving forward in the workshop
 When the alloted time for labs 1-4 is complete, you are ready to move onto the next (and final) lab in this workshop [Lab 5: Passing the torch](lab_5-passing-the-torch.md)
