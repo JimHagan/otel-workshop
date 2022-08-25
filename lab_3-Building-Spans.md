@@ -47,7 +47,7 @@ func CreateQuoteFromFloat(value float64 , ctx context.Context) Quote {
 ```
 
 ## Your task
-Read the message from the developer so that you can update the code in the `shippingservice/main.go` file. After you have updated the code, head back to New Relic to see how the distributed trace coming in from the request has changed. Document your findings.
+Read the message from the developer so that you can update the code in the `shippingservice/main.go` file. After you have updated the code, head back to New Relic to see how new distributed traces coming in have changed in terms of the information it can provide. Document your findings.
 
 ## Moving forward in the workshop
 Once you have identified the benefit(s) of building spans, be sure to document your process. When that is done, you are ready to move onto the next lab in this workshop [Lab 4: Adding Span Attributes](lab_4-Span-Attributes.md) 
