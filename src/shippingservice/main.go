@@ -34,7 +34,7 @@ import (
 	semconv "go.opentelemetry.io/otel/semconv/v1.7.0"
 	"go.opentelemetry.io/otel/trace"
 
-	// FOK Workshop - Span Attributes
+	// NHTT Workshop - Span Attributes
 
 
 	"golang.org/x/net/context"
@@ -169,7 +169,7 @@ func (s *server) GetQuote(ctx context.Context, in *pb.GetQuoteRequest) (*pb.GetQ
 	log.Info("[GetQuote] received request")
 	defer log.Info("[GetQuote] completed request")
 
-	// FOK Workshop - Building Spans
+	// NHTT Workshop - Building Spans
 	quote := CreateQuoteFromCount(0)
 
 	// Generate a response.
@@ -186,7 +186,7 @@ func (s *server) GetQuote(ctx context.Context, in *pb.GetQuoteRequest) (*pb.GetQ
 // It supplies a tracking ID for notional lookup of shipment delivery status.
 func (s *server) ShipOrder(ctx context.Context, in *pb.ShipOrderRequest) (*pb.ShipOrderResponse, error) {
 	
-	// FOK Workshop - Span Attributes
+	// NHTT Workshop - Span Attributes
 
 
 	log.Info("[ShipOrder] received request")
@@ -195,10 +195,10 @@ func (s *server) ShipOrder(ctx context.Context, in *pb.ShipOrderRequest) (*pb.Sh
 	// 1. Create a Tracking ID
 	baseAddress := fmt.Sprintf("%s, %s, %s, %d", in.Address.StreetAddress, in.Address.City, in.Address.State, in.Address.ZipCode)
 	
-	// FOK Workshop - Span Attributes
+	// NHTT Workshop - Span Attributes
 
 	
-	// FOK Workshop - Adding Errors
+	// NHTT Workshop - Adding Errors
 
 
 	id := CreateTrackingId(baseAddress)
