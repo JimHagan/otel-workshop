@@ -32,5 +32,3 @@ For those who choose to use the collector, it can be particularly useful for cen
 **How can I use the OTel Collector?**
 Please follow the steps in the [OTel Collector Challenge](otel-collector-challenge.md)
 
-## Moving forward in the workshop
-When the alloted time for labs 1-4 is complete, you are ready to move onto the next (and final) lab in this workshop [Lab 5: Passing the torch](lab_5-passing-the-torch.md)
