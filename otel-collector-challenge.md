@@ -1,4 +1,4 @@
-##OTel Collector Challenge
+## OTel Collector Challenge
 This portion of the workshop is intended for someone who has completed labs 1-4 with time to spare before moving onto the final portion of this workshop, lab 5, which is a group activity that will be completed in small groups.
 
 It assumes you already have a build of the Hipster Shop app running locally.
@@ -126,3 +126,6 @@ exporters:
 Compare trends before these changes were made to the collector using a simple NRQL query such as ``SELECT count(*) FROM Span SINCE 30 minutes ago TIMESERIES auto``.
 
 If you are not seeing these changes to take effect, exit ``skaffold dev`` (Press Control-C for Mac or Windows) to stop running the environment. Then run ``skaffold dev``. Wait 5-10 minutes and run the query again to see the changes in data ingest.  
+
+## Moving forward in the workshop
+When the alloted time for labs 1-4 is complete, you are ready to move onto the next (and final) lab in this workshop [Lab 5: Passing the torch](lab_5-passing-the-torch.md)
