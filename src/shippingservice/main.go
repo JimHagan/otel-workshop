@@ -221,7 +221,7 @@ func CreateQuoteFromCount(count int) Quote {
 	// NHTT Workshop - Building Spans
 	
 
-	// NHTT Workshop - Delays are hip!
+	// NHTT Workshop - Delays are a hip way to create a slow trace :) Maybe I'll add another one!
 	time.Sleep(time.Second * 1)
 	
 	// NHTT Workshop - Building Spans
@@ -235,7 +235,7 @@ func CreateQuoteFromFloat(value float64) Quote {
 	// NHTT Workshop - Building Spans
 
 
-	// NHTT Workshop - Delays are hip!
+	// NHTT Workshop - Delays are a hip way to create a slow trace :) Glad I made two
 	time.Sleep(time.Second * 3)
 
 	units, fraction := math.Modf(value)
