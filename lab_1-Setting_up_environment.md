@@ -55,7 +55,7 @@ If any errors occur during deployment, run `skaffold dev` one more time before r
 ## View your data in New Relic
 1. Navigate to your [New Relic account](https://one.newrelic.com).
 2. Locate `Services - OpenTelemetry` under `All entities`.
-3. You should see 9 microservices running and receiving data. You should also see a 10th service under `Services - APM`. 
+3. You should see 9 microservices running and receiving data (AdService, CartService checkoutservice, CurrencyService, Frontend, PaymentService, productcatalogservice, reccomendationservice, shippingservice). You should also see a 10th service under `Services - APM` (emailservice). 
 
 
 ## That's it
