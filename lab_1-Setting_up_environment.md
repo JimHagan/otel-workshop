@@ -48,8 +48,6 @@ skaffold dev
  
 Once all the microservices and load generator are deployed successfully, you will see a constant flow of log messages running in your terminal window. The load generator is generating data from your application, and Skaffold is logging information about the application activity in the terminal. 
 
-You can navigate to [localhost:3000](*) to see a live version of your application **<-- needs updating. this is not true yet**
-
 If any errors occur during deployment, run `skaffold dev` one more time before retracing your steps to see what may have gone wrong.
 
 ## View your data in New Relic
