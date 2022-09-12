@@ -25,8 +25,8 @@ If the deployment was successful, you should see a node called `minikube` in a t
 
 ## Export environment variables 
 1. Sign into your [New Relic](https://one.newrelic.com) account
-2. Locate your **ingest license** key from your account's [API keys list](https://one.newrelic.com/api-keys), and copy the key.
-3. Run the following commands to export the environment variables below, which configure the generated OpenTelemetry data to be sent to your account. Replace all instances of `<NEWRELIC_INGEST_LICENSE_KEY>` with your key. **Hold onto these commands in a notes file for later reference in this lab**
+2. Locate your **ingest license** key from your account's [API keys list](https://one.newrelic.com/api-keys).
+3. Run the following commands in your terminal to export the environment variables. These environmental variables configure the generated OpenTelemetry data to be sent to your account. Be sure to replace all instances of `<NEWRELIC_INGEST_LICENSE_KEY>` with your key. **Hold onto these commands in a notes file for later reference in this lab**
 
 ```bash
 export OTEL_EXPORTER_OTLP_ENDPOINT=https://otlp.nr-data.net:4317
