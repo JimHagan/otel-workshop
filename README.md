@@ -15,8 +15,8 @@ This repository contains all of the instructions and files needed to have a firs
 
 ## Getting Started
 
-1. From a new terminal window, clone this repository to your local machine using Git `git clone https://github.com/Bijesse/otel-workshop.git`
-2. Navigate into your new workspace using `cd otel-workshop`
+1. From a new terminal window, clone this repository to your local machine using Git `git clone https://github.com/Bijesse/nhtt-workshop.git`
+2. Navigate into your new workspace using `cd nhtt-workshop`
 3. Move onto the first lab of this workshop
 
 * Lab 1: [Setting up your environment](lab_1-Setting_up_environment.md)
