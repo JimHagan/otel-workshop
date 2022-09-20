@@ -107,7 +107,7 @@ service:
 
 ## Part 3 - Exporters
 
-For this part, you don't have to do any work! Please just draw your attention `exporters`. to We are using the OTLP exporter to send your observability data from the collector to New Relic!
+For this part, you don't have to do any work! Please just draw your attention `exporters`. We are using the OTLP exporter to send your observability data from the collector to New Relic!
 
 ```
 exporters:
