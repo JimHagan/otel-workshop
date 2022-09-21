@@ -4,7 +4,7 @@ For the remainder of this workshop, you will step into the shoes of a DevOps eng
 
 ## Locating the frontend issue
 
-Starting around 10-10:30AM today, the Hipster Shop social media PR team has been busy locating and responding to countless Tweets and TikToks from hipsters starting their morning expecting to spend money. Their angry hipster complaints are related to issues using the website to make an order. Several of the complaints state they have no issue loooking for the latest trends in clothing across multiple pages but their tiny attention spans are put to the test when they find themselves waiting multiple seconds for pages to load when they are completing their shipping details to make an order.
+Starting around 10-10:30AM today, the Hipster Shop social media PR team has been busy locating and responding to countless Tweets and TikToks from hipsters starting their morning expecting to spend money. Their angry hipster complaints are related to issues using the website to make an order. Several of the complaints state they have no issue looking for the latest trends in clothing across multiple pages but their tiny attention spans are put to the test when they find themselves waiting multiple seconds for pages to load when they are completing their shipping details to make an order.
 
 ## Find the problem microservice
 Now that you are aware of the issue users are experiencing on the front end, it is time to dig into the data in New Relic to identify the root cause. Hipster Shop is built across a variety of microservices which should help organize and contain your search. To begin your observability sleuthing, identify the microservice that seems significantly slower than the others. **Hint: Response Time!**
