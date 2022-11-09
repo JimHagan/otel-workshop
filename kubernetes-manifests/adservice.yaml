@@ -15,79 +15,69 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: adservice
+  name: cartservice
   namespace: opentelemetry-demo
 spec:
   revisionHistoryLimit: 1
-  replicas: 3
   selector:
     matchLabels:
-      app: adservice
+      app: cartservice
   template:
     metadata:
       labels:
-        app: adservice
+        app: cartservice
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
       containers:
-      - name: server
-        image: gcr.io/nr-devadv-labs/adservice:e0e021f
-        ports:
-        - containerPort: 9555
-        env:
-        - name: PORT
-          value: "9555"
-        - name: DISABLE_STATS
-          value: "1"
-        - name: DISABLE_TRACING
-          value: "1"
-        # - name: JAEGER_SERVICE_ADDR
-        #   value: "jaeger-collector:14268"
-        - name: POD_NAME
-          valueFrom:
-            fieldRef:
-              fieldPath: metadata.name
-        - name: POD_UID
-          valueFrom:
-            fieldRef:
-              fieldPath: metadata.uid
-        - name: OTEL_RESOURCE_ATTRIBUTES
-          value: "service.instance.id=$(POD_NAME),k8s.pod.uid=$(POD_UID)"
-        - name: HOST_IP
-          valueFrom:
-            fieldRef:
-              fieldPath: status.hostIP
-        - name: OTEL_EXPORTER_OTLP_ENDPOINT
-          value: "http://$(HOST_IP):4317"
-        resources:
-          requests:
-            cpu: 600m
-            memory: 840Mi
-          limits:
-            cpu: 600m
-            memory: 1200Mi
-        readinessProbe:
-          initialDelaySeconds: 90
-          periodSeconds: 15
-          exec:
-            command: ["/bin/grpc_health_probe", "-addr=:9555"]
-        livenessProbe:
-          initialDelaySeconds: 180
-          periodSeconds: 15
-          exec:
-            command: ["/bin/grpc_health_probe", "-addr=:9555"]
+        - name: server
+          image: gcr.io/nr-devadv-labs/cartservice:e0e021f
+          ports:
+            - containerPort: 7070
+          env:
+            - name: REDIS_ADDR
+              value: "redis-cart:6379"
+            - name: POD_UID
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.uid
+            - name: OTEL_RESOURCE_ATTRIBUTES
+              value: "k8s.pod.uid=$(POD_UID)"
+            - name: HOST_IP
+              valueFrom:
+                fieldRef:
+                  fieldPath: status.hostIP
+            - name: OTEL_EXPORTER_OTLP_ENDPOINT
+              value: "http://$(HOST_IP):4317"
+          resources:
+            requests:
+              cpu: 200m
+              memory: 192Mi
+            limits:
+              cpu: 200m
+              memory: 384Mi
+          readinessProbe:
+            initialDelaySeconds: 15
+            exec:
+              command:
+                ["/bin/grpc_health_probe", "-addr=:7070", "-rpc-timeout=5s"]
+          livenessProbe:
+            initialDelaySeconds: 15
+            periodSeconds: 10
+            exec:
+              command:
+                ["/bin/grpc_health_probe", "-addr=:7070", "-rpc-timeout=5s"]
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: adservice
+  name: cartservice
   namespace: opentelemetry-demo
 spec:
   type: ClusterIP
   selector:
-    app: adservice
+    app: cartservice
   ports:
-  - name: grpc
-    port: 9555
-    targetPort: 9555
+    - name: grpc
+      port: 7070
+      targetPort: 7070
